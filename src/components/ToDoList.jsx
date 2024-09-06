@@ -1,0 +1,17 @@
+import React from 'react'
+import ToDoCard from './toDoCard'
+
+export default function ToDoList(props) {
+  const {todos, handleDeleteTodo, handleEditTodo} = props
+  return (
+    <ul>
+      {todos.map((todo,todoIndex) => {
+        return (
+          <ToDoCard {...props} key={todoIndex} index ={todoIndex} >
+            <p>{todo}</p>
+          </ToDoCard>
+        )
+      })}
+    </ul>
+  )
+}
