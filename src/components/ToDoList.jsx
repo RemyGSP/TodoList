@@ -8,7 +8,7 @@ export default function ToDoList(props) {
       {todos.map((todo,todoIndex) => {
         return (
           <ToDoCard {...props} key={todoIndex} index ={todoIndex} >
-            <p>{todo}</p>
+            <p className='todoItem'>{todo}</p>
           </ToDoCard>
         )
       })}
