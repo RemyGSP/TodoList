@@ -1,5 +1,5 @@
 import React from 'react'
-import ToDoCard from './toDoCard'
+import ToDoCard from './ToDoCard'
 
 export default function ToDoList(props) {
   const {todos, handleDeleteTodo, handleEditTodo} = props
